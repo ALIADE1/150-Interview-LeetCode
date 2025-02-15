@@ -4,7 +4,7 @@ class Solution:
     def isPalindrome(self, s: str) -> bool:
         ss = ""
         for x in s:
-            if x.isalpha():
+            if x.isalnum():
                 ss+=x.lower()
+
         return  ss == ss[::-1]
-      
